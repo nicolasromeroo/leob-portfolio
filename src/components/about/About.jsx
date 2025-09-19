@@ -28,19 +28,15 @@ const About = () => {
       <div className="container">
         <div className="about-content">
           <div className="about-text animate-on-scroll">
-            <h2 className="section-title">About Me</h2>
+            <h2 className="section-title">Sobre Mí</h2>
             <div className="title-underline"></div>
 
             <p className="about-description">
-              With over 8 years of experience in professional video editing, I
-              specialize in creating compelling visual narratives that captivate
-              audiences and deliver results.
+              Con más de 8 años de experiencia en edición profesional de video, me especializo en crear narrativas visuales atractivas que cautivan audiencias y generan resultados.
             </p>
 
             <p className="about-description">
-              From corporate videos to cinematic productions, I bring technical
-              expertise and creative vision to every project, ensuring your
-              story is told with maximum impact and professional polish.
+              Desde videos corporativos hasta producciones cinematográficas, aporto experiencia técnica y visión creativa a cada proyecto, asegurando que tu historia se cuente con el máximo impacto y acabado profesional.
             </p>
 
             <div className="expertise-list">
@@ -51,7 +47,7 @@ const About = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>Advanced Editing</h4>
+                  <h4>Edición Avanzada</h4>
                   <p>Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve</p>
                 </div>
               </div>
@@ -63,8 +59,8 @@ const About = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>Color Grading</h4>
-                  <p>Professional color correction and cinematic grading</p>
+                  <h4>Corrección de Color</h4>
+                  <p>Corrección profesional de color y gradación cinematográfica</p>
                 </div>
               </div>
 
@@ -76,7 +72,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4>Motion Graphics</h4>
-                  <p>After Effects animations and visual effects</p>
+                  <p>Animaciones y efectos visuales con After Effects</p>
                 </div>
               </div>
             </div>
@@ -86,22 +82,22 @@ const About = () => {
             <div className="stats-grid">
               <div className="stat-item">
                 <div className="stat-number">500+</div>
-                <div className="stat-label">Projects Completed</div>
+                <div className="stat-label">Proyectos Completados</div>
               </div>
 
               <div className="stat-item">
                 <div className="stat-number">8</div>
-                <div className="stat-label">Years Experience</div>
+                <div className="stat-label">Años de Experiencia</div>
               </div>
 
               <div className="stat-item">
                 <div className="stat-number">98%</div>
-                <div className="stat-label">Client Satisfaction</div>
+                <div className="stat-label">Satisfacción del Cliente</div>
               </div>
 
               <div className="stat-item">
                 <div className="stat-number">24/7</div>
-                <div className="stat-label">Support Available</div>
+                <div className="stat-label">Soporte Disponible</div>
               </div>
             </div>
 
