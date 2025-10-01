@@ -5,66 +5,63 @@ const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [visibleProjects, setVisibleProjects] = useState(6);
   const portfolioRef = useRef(null);
-
   const projects = [
     {
       id: 1,
-      title: "Corporate Brand Film",
-      category: "corporate",
-      description: "High-end corporate video with cinematic storytelling",
-      duration: "2:30",
-      tags: ["4K", "Color Grading", "Motion Graphics"],
+      title: "Video para Influencer de Fitness",
+      category: "influencer",
+      description: "Producción y edición de rutina de entrenamiento para Instagram y YouTube.",
+      duration: "5:20",
+      tags: ["Fitness", "Redes Sociales", "Edición Rápida"],
     },
     {
       id: 2,
-      title: "Music Video Production",
-      category: "music",
-      description: "Dynamic music video with creative transitions",
-      duration: "3:45",
-      tags: ["Creative Edit", "VFX", "Sound Design"],
+      title: "Trabajo Práctico Universitario",
+      category: "educativo",
+      description: "Video documental sobre impacto ambiental realizado para una materia universitaria.",
+      duration: "12:00",
+      tags: ["Documental", "Educativo", "Narración"],
     },
     {
       id: 3,
-      title: "Documentary Series",
-      category: "documentary",
-      description: "Multi-episode documentary with narrative flow",
-      duration: "25:00",
-      tags: ["Long Form", "Storytelling", "Archive"],
+      title: "Entrevista a Deportista Destacado",
+      category: "deportes",
+      description: "Entrevista y highlights de jugador profesional de fútbol con repercusión nacional.",
+      duration: "7:30",
+      tags: ["Entrevista", "Deportes", "Highlights"],
     },
     {
       id: 4,
-      title: "Product Commercial",
-      category: "commercial",
-      description: "High-impact product showcase commercial",
-      duration: "0:60",
-      tags: ["Product Shot", "3D Integration", "Fast Cut"],
+      title: "Campaña para Marca de Ropa",
+      category: "comercial",
+      description: "Video promocional para lanzamiento de nueva colección de ropa urbana.",
+      duration: "1:10",
+      tags: ["Moda", "Promocional", "Creatividad"],
     },
     {
       id: 5,
-      title: "Wedding Highlight Reel",
-      category: "wedding",
-      description: "Emotional wedding story with cinematic feel",
-      duration: "4:20",
-      tags: ["Cinematic", "Emotional", "Music Sync"],
+      title: "Vlog de Viaje Influencer",
+      category: "influencer",
+      description: "Edición de vlog de viaje por Europa para influencer con miles de seguidores.",
+      duration: "8:45",
+      tags: ["Vlog", "Viajes", "Storytelling"],
     },
     {
       id: 6,
-      title: "Event Coverage",
-      category: "events",
-      description: "Multi-camera event editing and highlights",
-      duration: "8:15",
-      tags: ["Multi-Cam", "Live Event", "Quick Turn"],
+      title: "Cobertura de Evento Deportivo",
+      category: "deportes",
+      description: "Resumen y edición de torneo de pádel con participación de figuras reconocidas.",
+      duration: "6:30",
+      tags: ["Evento", "Deportes", "Cobertura"],
     },
   ];
 
   const categories = [
-    { id: "all", name: "All Projects" },
-    { id: "corporate", name: "Corporate" },
-    { id: "commercial", name: "Commercial" },
-    { id: "music", name: "Music Videos" },
-    { id: "documentary", name: "Documentary" },
-    { id: "wedding", name: "Wedding" },
-    { id: "events", name: "Events" },
+    { id: "all", name: "Todos los Proyectos" },
+    { id: "influencer", name: "Influencers" },
+    { id: "comercial", name: "Comercial" },
+    { id: "educativo", name: "Educativos" },
+    { id: "deportes", name: "Deportes" },
   ];
 
   const filteredProjects =
@@ -98,7 +95,7 @@ const Portfolio = () => {
           <h2 className="section-title">Portfolio</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">
-            Discover my latest work spanning across multiple genres and formats
+            Descubre mis últimos trabajos en distintos géneros y formatos
           </p>
         </div>
 
@@ -152,8 +149,8 @@ const Portfolio = () => {
                   </div>
 
                   <div className="project-actions">
-                    <button className="btn-watch">Watch Now</button>
-                    <button className="btn-details">Details</button>
+                    <button className="btn-watch">Ver ahora</button>
+                    <button className="btn-details">Detalles</button>
                   </div>
                 </div>
               </div>
@@ -167,7 +164,7 @@ const Portfolio = () => {
               className="btn-load-more"
               onClick={() => setVisibleProjects((prev) => prev + 3)}
             >
-              Load More Projects
+              Cargar más proyectos
             </button>
           </div>
         )}
@@ -175,15 +172,15 @@ const Portfolio = () => {
         <div className="demo-reel-section animate-on-scroll">
           <div className="demo-reel-card">
             <div className="demo-reel-content">
-              <h3>Complete Demo Reel</h3>
+              <h3>Demo Reel Completo</h3>
               <p>
-                Watch my comprehensive showcase featuring the best of my work
+                Mira mi reel completo con lo mejor de mi trabajo
               </p>
               <button className="btn-demo-reel">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z" />
                 </svg>
-                Watch Demo Reel
+                Ver Demo Reel
               </button>
             </div>
             <div className="demo-reel-visual">

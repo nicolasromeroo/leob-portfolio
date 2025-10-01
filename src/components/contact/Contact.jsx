@@ -69,21 +69,19 @@ const Contact = () => {
     <section id="contact" className="contact-section" ref={contactRef}>
       <div className="container">
         <div className="contact-header animate-on-scroll">
-          <h2 className="section-title">Let's Create Together</h2>
+          <h2 className="section-title">Creemos Juntos</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">
-            Ready to bring your vision to life? Let's discuss your project and
-            create something amazing.
+            ¿Listo para hacer realidad tu visión? Hablemos de tu proyecto y creemos algo increíble.
           </p>
         </div>
 
         <div className="contact-content">
           <div className="contact-info animate-on-scroll">
             <div className="contact-card">
-              <h3>Get In Touch</h3>
+              <h3>Contáctame</h3>
               <p>
-                I'm always excited to work on new projects and collaborate with
-                creative minds.
+                Siempre estoy emocionado de trabajar en nuevos proyectos y colaborar con mentes creativas.
               </p>
 
               <div className="contact-methods">
@@ -106,7 +104,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="method-content">
-                    <h4>Phone</h4>
+                    <h4>Teléfono</h4>
                     <p>+1 (555) 123-4567</p>
                   </div>
                 </div>
@@ -118,8 +116,8 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="method-content">
-                    <h4>Location</h4>
-                    <p>Los Angeles, CA</p>
+                    <h4>Ubicación</h4>
+                    <p>Los Ángeles, CA</p>
                   </div>
                 </div>
               </div>
@@ -148,7 +146,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="project-form">
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name">Full Name *</label>
+                  <label htmlFor="name">Nombre completo *</label>
                   <input
                     type="text"
                     id="name"
@@ -159,7 +157,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
+                  <label htmlFor="email">Correo electrónico *</label>
                   <input
                     type="email"
                     id="email"
@@ -173,7 +171,7 @@ const Contact = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="company">Company/Organization</label>
+                  <label htmlFor="company">Empresa/Organización</label>
                   <input
                     type="text"
                     id="company"
@@ -183,67 +181,67 @@ const Contact = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="projectType">Project Type</label>
+                  <label htmlFor="projectType">Tipo de proyecto</label>
                   <select
                     id="projectType"
                     name="projectType"
                     value={formData.projectType}
                     onChange={handleInputChange}
                   >
-                    <option value="">Select project type</option>
-                    <option value="corporate">Corporate Video</option>
-                    <option value="commercial">Commercial</option>
-                    <option value="music">Music Video</option>
-                    <option value="documentary">Documentary</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="event">Event Coverage</option>
-                    <option value="other">Other</option>
+                    <option value="">Selecciona el tipo de proyecto</option>
+                    <option value="corporate">Video Corporativo</option>
+                    <option value="commercial">Comercial</option>
+                    <option value="music">Video Musical</option>
+                    <option value="documentary">Documental</option>
+                    <option value="wedding">Boda</option>
+                    <option value="event">Cobertura de Evento</option>
+                    <option value="other">Otro</option>
                   </select>
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="budget">Budget Range</label>
+                  <label htmlFor="budget">Rango de presupuesto</label>
                   <select
                     id="budget"
                     name="budget"
                     value={formData.budget}
                     onChange={handleInputChange}
                   >
-                    <option value="">Select budget range</option>
-                    <option value="under-1k">Under $1,000</option>
+                    <option value="">Selecciona el rango de presupuesto</option>
+                    <option value="under-1k">Menos de $1,000</option>
                     <option value="1k-5k">$1,000 - $5,000</option>
                     <option value="5k-10k">$5,000 - $10,000</option>
                     <option value="10k-25k">$10,000 - $25,000</option>
-                    <option value="25k-plus">$25,000+</option>
+                    <option value="25k-plus">Más de $25,000</option>
                   </select>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="timeline">Timeline</label>
+                  <label htmlFor="timeline">Plazo</label>
                   <select
                     id="timeline"
                     name="timeline"
                     value={formData.timeline}
                     onChange={handleInputChange}
                   >
-                    <option value="">Select timeline</option>
-                    <option value="rush">Rush (1-3 days)</option>
-                    <option value="urgent">Urgent (1 week)</option>
-                    <option value="standard">Standard (2-4 weeks)</option>
-                    <option value="flexible">Flexible (1+ month)</option>
+                    <option value="">Selecciona el plazo</option>
+                    <option value="rush">Urgente (1-3 días)</option>
+                    <option value="urgent">Urgente (1 semana)</option>
+                    <option value="standard">Estándar (2-4 semanas)</option>
+                    <option value="flexible">Flexible (1+ mes)</option>
                   </select>
                 </div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Project Details *</label>
+                <label htmlFor="message">Detalles del proyecto *</label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell me about your project, vision, and any specific requirements..."
+                  placeholder="Cuéntame sobre tu proyecto, visión y cualquier requerimiento específico..."
                   rows="6"
                   required
                 ></textarea>
@@ -257,11 +255,11 @@ const Contact = () => {
                 {isSubmitting ? (
                   <>
                     <div className="spinner"></div>
-                    Sending...
+                    Enviando...
                   </>
                 ) : (
                   <>
-                    Send Message
+                    Enviar mensaje
                     <svg viewBox="0 0 24 24" fill="currentColor">
                       <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
                     </svg>
